@@ -26,14 +26,10 @@ cd T2WarBot
 
 :electric_plug: Requirements
 ----
-If you want to install `T2WarBot` on your computer, you need to install some `Python3` modules:
+If you want to run `T2WarBot` on your computer, you need to install some `Python3` modules:
 
 ```sh
 pip3 install -r requirements.txt
-
-  [or]
-
-pip3 install tweepy
 ```
 
 Also you need to specify your Twitter credential tokens. 
@@ -43,15 +39,21 @@ Also you need to specify your Twitter credential tokens.
 ```py
 ''' t2warbot.py '''
 
-# [...]
-
 def tweet(tweet_msg):
-    CONSUMER_KEY = " == CENSORED == "
+    CONSUMER_KEY    = " == CENSORED == "
     CONSUMER_SECRET = " == CENSORED == "   
-    ACCESS_KEY = " == CENSORED == "    
-    ACCESS_SECRET = " == CENSORED == "
+    ACCESS_KEY      = " == CENSORED == "    
+    ACCESS_SECRET   = " == CENSORED == "
+```
 
-# [...]
+Finally, you need to have a list with the name of the participants in a text file, written line by line. For example:
+
+```sh
+Bill Gates
+Steve Jobs
+Elon Musk
+SpongeBob
+ ...
 ```
 
 :runner: Usage
@@ -62,7 +64,7 @@ To turn on the War Bot, run:
 python3 t2warbot.py
 ```
 
-You can specify a file with all the usernames, line by line, in the following way:
+You can specify the file with all the usernames in the following way (`alumnos.txt` by default):
 
 ```sh
 python3 t2warbot.py people.txt
@@ -99,8 +101,7 @@ Polyglot-Code
 :trophy: And the winner is...
 ----
 
-> The T2WarBot is currently in action
-
+> [Adriel](https://twitter.com/t2_war/status/1149673008715292672) has been the first winner of the T2War! Congrats!
 ----
 
 Please contact with [Kike Puma](https://linkedin.com/in/kikepuma) if you need more information.
