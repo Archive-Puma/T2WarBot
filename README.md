@@ -95,7 +95,7 @@ Polyglot-Code
 < Program >
 |__ src
   |__ t2warbot.py
-|_ requirements.txt
+|__ requirements.txt
 ```
 
 :trophy: And the winner is...
